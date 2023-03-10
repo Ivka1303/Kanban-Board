@@ -25,4 +25,4 @@ To run the pre-written unit test just run `python3 -m unittest discover` from th
 
 ### Video Walkthrough
 
-To see a video walkthrough using the app, please, follow this [link]()
+To see a video walkthrough using the app, please, follow this [link](https://www.loom.com/share/86463464949d42828f6f61da0c77a46c)
