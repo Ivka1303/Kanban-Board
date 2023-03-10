@@ -17,6 +17,8 @@ To run the app on your computer:
 - run a simple HTTP server in Python by running `python -m http.server`
 - go to your http://localhost:8000/ and enter board.html
 
+Or just follow this [link](https://ivka1303.github.io/Kanban-Board/) to interact with the board.
+
 ### Testing 
 
 To run the pre-written unit test just run `python3 -m unittest discover` from the repository. 
