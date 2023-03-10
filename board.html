@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content="width=device-width", initial-scale = 1.0>
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="board.css">
+    <script src="board.js"></script>
+  </head>
+  <body>
+    <div class="title">
+      <h1>To-do List ☑️</h1>
+    </div>
+    <div class="board">
+      <div class="board_column">
+        <div class="column_title">To Do 🕰️</div>
+        <div class="column_items">
+          <div class="board_dropzone"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+            data-state="to_do">
+            <button class="add_button" type="button" onclick="addTask('todo')">+ New</button>
+            <form class="task_form" action="" method="post">
+            <p><input type="text" name="task_name" placeholder="to do CS162 PCW"/></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="board_column">
+        <div class="column_title">In progress ✍️</div>
+        <div class="column_items">
+          <div class="board_dropzone"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+            data-state="in_progress">
+            <button class="add_button" type="button" onclick="addTask('in_progress')">+ New</button>
+            <form class="task_form" action="" method="post">
+            <p><input type="text" name="task_name" placeholder="to do CS162 PCW"/></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="board_column">
+        <div class="column_title">Done 💅</div>
+        <div class="column_items">
+          <div class="board_dropzone"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+            data-state="done">
+            <button class="add_button" type="button" onclick="addTask('done')">+ New</button>
+            <form class="task_form" action="" method="post">
+            <p><input type="text" name="task_name" placeholder="to do CS162 PCW"/></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

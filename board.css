@@ -1,0 +1,82 @@
+div.title {
+    display: flex;
+    font-family: sans-serif;
+  }
+  
+.board{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 95%;
+    background: #1560BD;
+    border-radius: 5px;
+}
+
+
+.board * {
+    font-family: sans-serif;
+}
+
+
+.board_column {
+    flex: 1;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.delete_item {
+    width: 8%;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 2px 0;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.task_form {
+    display: None;
+    margin-top: 20px;
+    padding: 1px 0;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    background: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.board_column:not(:last-child) {
+    margin-right: 30px;
+}
+
+.column_title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: white;
+    user-select: none;
+}
+
+
+.add_button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
